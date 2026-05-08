@@ -1,0 +1,222 @@
+FAIL addr_field_fail_nonstruct
+FAIL addr_field_fail_unknown
+FAIL addr_field_fail_wrong_ptr
+FAIL alloc_fail_no_args
+FAIL alloc_fail_wrong_type
+FAIL argv_fail_argc_arg
+FAIL argv_fail_no_args
+FAIL argv_fail_wrong_index_type
+FAIL array_fail_aggregate_value
+FAIL array_fail_index_nonarray
+FAIL array_fail_index_nonint
+FAIL array_fail_init
+FAIL array_fail_use_as_value
+FAIL array_fail_zero_size
+FAIL break_fail_in_func
+FAIL break_fail_outside
+FAIL cast_fail_string_to_long
+FAIL continue_fail_outside
+FAIL exit_fail_string
+FAIL field_fail_chained
+FAIL field_fail_on_long
+FAIL field_fail_unknown
+FAIL field_write_fail_nonstruct
+FAIL field_write_fail_unknown
+FAIL field_write_fail_wrong_type
+FAIL free_fail_typed
+FAIL func_fail1
+FAIL func_fail2
+FAIL func_fail3
+FAIL null_fail_to_long
+FAIL print_fail_char_with_l
+FAIL print_fail_no_args
+FAIL print_fail_nonliteral
+FAIL print_fail_too_few
+FAIL print_fail_too_many
+FAIL print_fail_trailing_pct
+FAIL print_fail_unknown_spec
+FAIL print_fail_wrong_type
+FAIL ptr_fail_add_two_ptrs
+FAIL ptr_fail_addr_of_expr
+FAIL ptr_fail_addr_of_literal
+FAIL ptr_fail_compare_diff
+FAIL ptr_fail_deref_int
+FAIL ptr_fail_mul
+FAIL ptr_fail_no_inner
+FAIL ptr_fail_store_to_nonptr
+FAIL ptr_fail_store_wrong_type
+FAIL ptr_fail_sub_diff_types
+FAIL ptr_fail_type_mismatch
+FAIL ptr_fail_unclosed
+FAIL ptr_field_fail_not_struct
+FAIL ptr_field_fail_unknown
+FAIL readf_fail_no_args
+FAIL readf_fail_wrong_type
+FAIL struct_fail_dup_field
+FAIL struct_fail_init
+FAIL struct_fail_redecl
+FAIL struct_fail_self_contain
+FAIL struct_fail_use_in_expr
+FAIL tc_fail1
+FAIL tc_fail2
+FAIL tc_fail3
+FAIL tc_fail4
+FAIL tc_fail5
+FAIL tc_fail6
+FAIL writef_fail_one_arg
+FAIL writef_fail_wrong_contents
+PASS addr_field_basic 42 ''
+PASS addr_field_byte 200 ''
+PASS addr_field_diff_check 1 ''
+PASS addr_field_in_loop 55 ''
+PASS addr_field_ptr 7 ''
+PASS addr_field_second 99 ''
+PASS addr_field_two_structs 30 ''
+PASS alloc_basic 1 ''
+PASS alloc_byte_buffer 45 ''
+PASS alloc_large 1 ''
+PASS alloc_many 60 ''
+PASS alloc_print 0 'ok\n'
+PASS alloc_write_read 42 ''
+PASS argv_argc 1 ''
+PASS argv_first 0 ''
+PASS argv_oob 0 ''
+PASS arith1 14 ''
+PASS arith2 25 ''
+PASS arith3 21 ''
+PASS arith4 6 ''
+PASS arith5 1 ''
+PASS array_addr_of_elem 1 ''
+PASS array_basic 60 ''
+PASS array_byte 0 'hi\n'
+PASS array_in_struct 6 ''
+PASS array_loop 49 ''
+PASS array_padding_in_struct 0 ''
+PASS array_ptr_index 111 ''
+PASS array_signed_load 99 ''
+PASS array_sum 45 ''
+PASS array_via_pointer 5 ''
+PASS break_array_search 4 ''
+PASS break_basic 10 ''
+PASS break_for 6 ''
+PASS break_nested 10 ''
+PASS cast_narrow_signed 0 '-1\n'
+PASS continue_basic 35 ''
+PASS continue_while 45 ''
+PASS elseif_basic 6 ''
+PASS elseif_no_final_else 7 ''
+PASS exit_immediate 42 ''
+PASS exit_in_branch 7 ''
+PASS field_read_byte 200 ''
+PASS field_read_in_expr 30 ''
+PASS field_read_in_func 7 ''
+PASS field_read_second 200 ''
+PASS field_read_via_ptr 42 ''
+PASS field_read_whole 99 ''
+PASS field_read_zero 0 ''
+PASS field_write_basic 42 ''
+PASS field_write_both 142 ''
+PASS field_write_byte 200 ''
+PASS field_write_loop 55 ''
+PASS field_write_self_ptr 12 ''
+PASS field_write_string 0 'hello\n'
+PASS field_write_then_print 0 'x=42\n'
+PASS field_write_whole 99 ''
+PASS for1 55 ''
+PASS for2 120 ''
+PASS for3 7 ''
+PASS for4 25 ''
+PASS for5 15 ''
+PASS for6 10 ''
+PASS free_null 0 ''
+PASS func1 7 ''
+PASS func2 100 ''
+PASS func3 120 ''
+PASS func4 89 ''
+PASS func5 24 ''
+PASS func6 21 ''
+PASS func7 100 ''
+PASS if1 100 ''
+PASS if2 200 ''
+PASS if3 7 ''
+PASS if4 3 ''
+PASS loop_inner_var 45 ''
+PASS null_assign 1 ''
+PASS null_compare 0 ''
+PASS null_init 1 ''
+PASS print_char 0 'c=A\n'
+PASS print_concat 0 '12345'
+PASS print_escape 0 'a\tb\n'
+PASS print_hello 0 'Hello, world!\n'
+PASS print_int 0 'i=300\n'
+PASS print_int_neg 0 'i=-300\n'
+PASS print_literal_arg 0 'answer is 42\n'
+PASS print_long 0 'n=42\n'
+PASS print_long_min 0 '-9223372036854775808\n'
+PASS print_long_neg 0 '-7\n'
+PASS print_long_zero 0 '0\n'
+PASS print_loop 0 '1\n2\n3\n4\n5\n'
+PASS print_mixed 0 'char=A int=300 long=1000000 str=hi\n'
+PASS print_no_args 0 'no newline'
+PASS print_percent 0 '100% done\n'
+PASS print_promotion 0 '42\n'
+PASS print_string 0 'hello world\n'
+PASS ptr_addr_deref 99 ''
+PASS ptr_arith_byte 5 ''
+PASS ptr_arith_long 200 ''
+PASS ptr_arith_loop 45 ''
+PASS ptr_arith_sub 100 ''
+PASS ptr_chain 7 ''
+PASS ptr_compare_ord 1 ''
+PASS ptr_decl 0 ''
+PASS ptr_deref_byte 200 ''
+PASS ptr_deref_through_func 50 ''
+PASS ptr_deref_whole 100 ''
+PASS ptr_diff 5 ''
+PASS ptr_field_addr 1 ''
+PASS ptr_field_byte 200 ''
+PASS ptr_field_chained_via_ptr 7 ''
+PASS ptr_field_heap 42 ''
+PASS ptr_field_mutate_through 6 ''
+PASS ptr_field_read 42 ''
+PASS ptr_field_read_y 99 ''
+PASS ptr_field_self 111 ''
+PASS ptr_field_write 99 ''
+PASS ptr_in_func 7 ''
+PASS ptr_nested 0 ''
+PASS ptr_round_trip 30 ''
+PASS ptr_smoke 99 ''
+PASS ptr_write 50 ''
+PASS ptr_write_byte 200 ''
+PASS ptr_write_via_func 77 ''
+PASS ptr_write_whole 123 ''
+PASS readf_missing 0 ''
+PASS readf_print 0 'hello world\n'
+PASS readf_walk_bytes 3 ''
+PASS readf_writef_roundtrip 0 'round-trip ok\n'
+PASS showcase 0 'Factorials:\n  1! = 1\n  2! = 2\n  3! = 6\n  4! = 24\n  5! = 120\n  6! = 720\ndone!\n'
+PASS sized1 65 ''
+PASS sized3 200 ''
+PASS sized6 1 ''
+PASS sized7 100 ''
+PASS struct_decl 0 ''
+PASS struct_param 7 ''
+PASS struct_self_ptr 0 ''
+PASS struct_size 32 ''
+PASS struct_with_padding 0 ''
+PASS tc_pass1 30 ''
+PASS tc_pass2 15 ''
+PASS tc_pass3 1 ''
+PASS tc_pass4 65 ''
+PASS unsigned1 1 ''
+PASS unsigned2 0 ''
+PASS var1 42 ''
+PASS var2 30 ''
+PASS var3 210 ''
+PASS var4 10 ''
+PASS var5 22 ''
+PASS while1 55 ''
+PASS while2 0 ''
+PASS while3 42 ''
+PASS writef_basic 1 ''
+PASS writef_long_buffer 1 ''
